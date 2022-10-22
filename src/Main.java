@@ -29,7 +29,7 @@ public class Main {
         int biggest = logicOp.checkBiggerNumber(2,3);
         String fast = "FastTrackIT";
         System.out.println("The bigger number is: " + biggest);
-        System.out.println(logicOp.textComp("FastTrackIT"));
+        System.out.println(logicOp.textComp(fast));
         System.out.println(logicOp.textNumberReturn(fast,1));
         System.out.println(logicOp.forecast(6));
         System.out.println(logicOp.numberCompare(2));
