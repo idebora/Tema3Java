@@ -129,15 +129,14 @@ public class LogicalOperations {
          return (float) sum/y;
 
     }
-    public void asterix(String x){
-        x = "*";
-       String y = "*******";
-        for(int i=7;i>=1;i--){
-            for(int j=7; j>=1;j--){
-                System.out.println(y);
-
+    public void asterix(int x){
+        String ast;
+        for(int i=x;i>=1;i--){
+            ast = "";
+            for(int j=1; j<=i;j++) {
+                ast += "*";
             }
-            System.out.println(x);
+            System.out.println(ast);
         }
     }
 

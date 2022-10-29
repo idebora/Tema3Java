@@ -49,7 +49,7 @@ public class Main {
     op.odd100(3);
         System.out.println(op.sum100(99));
         System.out.println(op.med100(99));
-        op.asterix("*");
+        op.asterix(7);
 //        AppMain.main();
     }
 }
