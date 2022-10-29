@@ -50,6 +50,10 @@ public class Main {
         System.out.println(op.sum100(99));
         System.out.println(op.med100(99));
         op.asterix(7);
+        op.while100(98);
+        op.whileNegativ(-98);
+        op.whileXY(2,7);
+        op.whileGreater(9,8);
 //        AppMain.main();
     }
 }
