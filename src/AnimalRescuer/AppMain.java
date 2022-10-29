@@ -4,24 +4,24 @@ public class AppMain {
     public static void main() {
         Animal dog = new Animal();
         Animal cat = new Animal();
-        dog.name = "Azor";
-        cat.name = "Kitty";
-        System.out.println("Animals name are " + dog.name + " and " + cat.name);
+        dog.setName("Azor");
+        cat.setName("Kitty");
+        System.out.println("Animals name are " + dog.getName() + " and " + cat.getName());
 
         Adopter human = new Adopter();
-        human.name = "Alex";
-        System.out.println("Adopter name is " + human.name);
+        human.setName("Alexandru");
+        System.out.println("Adopter name is " + human.getName());
 
         AnimalFood food = new AnimalFood();
-        food.price = 10.5;
-        System.out.println("Food's price is " + food.price + " euro");
+        food.setPrice(10.9);
+        System.out.println("Food's price is " + food.getPrice() + " euro");
 
         RecreationalActivity activ = new RecreationalActivity();
-        activ.name = "running";
-        System.out.println(dog.name + " is " + activ.name);
+        activ.setName("running");
+        System.out.println(dog.getName() + " is " + activ.getName());
 
         Veterinarian vet = new Veterinarian();
-        vet.name = "Maria";
-        System.out.println("Vet name is " + vet.name);
+        vet.setName("Maria");
+        System.out.println("Vet name is " + vet.getName());
     }
 }
