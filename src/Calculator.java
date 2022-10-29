@@ -48,4 +48,5 @@ public class Calculator {
         String s= result1+ "  m/s \n" + result2 + "  km/h \n" + result3 + "  mile/h";
         return s;
     }
+
 }

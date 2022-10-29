@@ -40,8 +40,17 @@ public class Main {
 //        System.out.println(logicOp.isEligibleToVote(19));
 //        System.out.println(logicOp.theMaxNumber(12,9,3));
 //        System.out.println(logicOp.theMaxNumber2(12,19,3));
-
-        AppMain.main();
+    LogicalOperations op = new LogicalOperations();
+    op.afis100(88);
+    op.afisNegativ(-98);
+    op.afisXY(8,10);
+    op.numarare(41,9);
+    op.even100(0);
+    op.odd100(3);
+        System.out.println(op.sum100(99));
+        System.out.println(op.med100(99));
+        op.asterix("*");
+//        AppMain.main();
     }
 }
 

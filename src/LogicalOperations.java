@@ -75,5 +75,72 @@ public class LogicalOperations {
         else
             return v;
     }
+    public void afis100(int x){
+        for(int i = x;i<=100;i++){
+            System.out.println(i);
+        }
+    }
+    public void afisNegativ(int x){
+        for( int i = x;i>=-100;i--){
+            System.out.println(i);
+        }
+    }
+    public void afisXY(int x,int y){
+
+            for (int i = x; i <= y; i++){
+                System.out.println(i);
+            }
+
+    }
+    public void numarare(int x,int y) {
+        if (x < y)
+            for (int i = x; i <= y; i++) {
+                System.out.println(i);
+            }
+        else System.out.println(x + " e mai mare decat " + y);
+    }
+    public void even100(int x){
+        x = 1;
+            for(int i=x;i<=100;i++){
+                if (i % 2 == 0)
+                System.out.println(i);
+            }
+    }
+    public void odd100(int x) {
+        x = 0;
+        for (int i = x; i <= 100; i++) {
+            if (i % 2 == 1)
+                System.out.println(i);
+        }
+    }
+    public int sum100(int x){
+        int sum = 0;
+        for(int i=x;i<=100;i++){
+            sum = sum + i;
+        }
+        return sum;
+    }
+    public float med100(int x){
+        int sum = 0;
+        for (int i=x;i<=100;i++){
+            sum = sum + i;
+        }
+        int y = 101-x;
+         return (float) sum/y;
+
+    }
+    public void asterix(String x){
+        x = "*";
+       String y = "*******";
+        for(int i=7;i>=1;i--){
+            for(int j=7; j>=1;j--){
+                System.out.println(y);
+
+            }
+            System.out.println(x);
+        }
+    }
+
+
 }
 
