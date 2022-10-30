@@ -1,5 +1,7 @@
 import AnimalRescuer.AppMain;
 
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
 //
@@ -54,6 +56,15 @@ public class Main {
         op.whileNegativ(-98);
         op.whileXY(2,7);
         op.whileGreater(9,8);
+        op.whileEven();
+        op.whileodd();
+        op.whileMed();
+        op.divid7(2,15);
+        System.out.println("Fibonacci:");
+        op.fibonacci();
+        System.out.println("CozaLozaWoza method:");
+        op.CozaLozaWoza();
+
 //        AppMain.main();
     }
 }

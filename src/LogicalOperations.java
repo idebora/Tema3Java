@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class LogicalOperations {
 
 
@@ -194,6 +196,101 @@ public class LogicalOperations {
                 System.out.println(j);
                 j++;
             } while (j <= y);
+        }
+    }
+    public void whileEven() {
+        int i = 1;
+        do {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+            i++;
+        } while (i<=100);
+    }
+    public void whileodd(){
+        int i= 1;
+        do{
+            if(i%2 ==1){
+                System.out.println(i);
+            }
+            i++;
+        }while(i<=100);
+    }
+    public void whileMed(){
+        int i = 111;
+        int sum = 0;
+        int count = 0;
+        do{
+            sum = sum + i;
+            i++;
+            count+= 1;
+        }while(i<=8899);
+        System.out.println(sum);
+        float med = sum / count;
+        System.out.println(med);
+    }
+    public void divid7(int x,int y){
+        int i = x;
+        int sum =0;
+        int count = 0;
+        float med = 0;
+        do{
+            if(i%7 == 0){
+            sum = sum+i;
+            count +=1;
+            }
+        i++;
+        }while(i<=y);
+        med =(float) sum/count;
+        System.out.println(med);
+    }
+    public void fibonacci() {
+        int n = 0;
+        int i = 0;
+        int j = 1;
+        int sum = 1;
+
+        do {
+            System.out.println(sum);
+            sum = i + j;
+            i = j;
+            j = sum;
+            n++;
+        } while (n<20);
+    }
+
+    public void CozaLozaWoza() {
+        int i = 1;
+        while(i<=110){
+            if(i%3==0 && i%5==0 && i%7==0){
+                System.out.print("CozaLozaWoza ");
+            }
+            else if(i%3 == 0 && i%5 ==0){
+                System.out.print("CozaLoza ");
+            }
+            else if(i%3 == 0 && i%7 ==0){
+                System.out.print("CozaWoza ");
+            }
+            else if(i%5 == 0 && i%7 ==0){
+                System.out.print("WozaLoza ");
+            }
+            else if(i%3==0){
+                System.out.print("Coza ");
+            }
+            else if(i%5==0){
+                System.out.print("Loza ");
+            }
+            else if(i%7==0){
+                System.out.print("Woza ");
+            }
+            else{
+                System.out.print(i+" ");
+            }
+            if(i%11 == 0){
+                System.out.println();
+            }
+            i++;
+
         }
     }
 }
