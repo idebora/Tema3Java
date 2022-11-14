@@ -1,5 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
 public class LogicalOperations {
 
 
@@ -46,25 +44,15 @@ public class LogicalOperations {
 
     public void printNumber(int number) {
         String result = String.format("The number is %s", number);
-        switch (number) {
-            default:
-                System.out.println(result);
-
-        }
+        System.out.println(result);
     }
 
     public boolean isNumberEven(int number) {
-        if (number % 2 == 0)
-            return true;
-        else
-            return false;
+        return number % 2 == 0;
     }
 
     public boolean isEligibleToVote(int number) {
-        if (number > 18)
-            return true;
-        else
-            return false;
+        return number > 18;
     }
 
     public int theMaxNumber(int first, int second, int third) {
@@ -293,5 +281,97 @@ public class LogicalOperations {
 
         }
     }
+    public int[] myArray100(){
+        int[] myArray = new int[100];
+        for(int i = 0; i < myArray.length; i++){
+            myArray[i] = i + 1;
+        }
+        return myArray;
+    }
+    public void printArray(int[] array){
+        for(int i = 0; i<array.length; i++){
+            System.out.print(array[i] + " ");
+        }
+    }
+    public int[] evenArray(){
+        int index= 0;
+        int[] myArray = new int[50];
+        for(int i = 1; i <= 100; i++){
+            if (i % 2 == 0){
+                myArray[index] = i;
+                index +=1;
+            }
+        }
+        return myArray;
+    }
+
+    public float averageOfValues(int[] myArray){
+       float sum = 0;
+        for(int i=0; i<myArray.length; i++){
+            sum += myArray[i];
+        }
+        return sum/ myArray.length;
+    }
+
+    public boolean existString(String[] array, String S){
+        for(int i = 0; i<array.length; i++){
+            if (array[i].equals(S))
+                return true;
+        }
+
+        return false;
+    }
+
+    public int getIndexforValue(int[] array, int value){
+        for(int i = 0; i< array.length; i++){
+            if (value == array[i]){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public char[] grilaArray() {
+        for (int i = 1; i <= 100; i++) {
+            if (i % 10 == 0) {
+                System.out.println("-");
+            } else {
+                System.out.print("-");
+            }
+        }
+        return "-".toCharArray();
+    }
+
+    public int[] getArrayLessNumber(int[] array, int number){
+        for(int i = 0; i<array.length; i++){
+            if (array[i] == number){
+                i = i;
+            }
+            else {
+                System.out.print(array[i] + " ");
+            }
+        }
+        return array;
+    }
+
+    public int getSmallNumber(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length; j++) {
+               if (array[i] < array[j]) {
+                    array[j] = array[i];
+                    array[i] = array[j+1];
+                }
+            }
+        }
+            return array[1];
+    }
+
+    public int[] getCopyOfArray(int[] array1,int[] array2){
+        for (int i = 0; i < array2.length; i++){
+            array2[i] = array1[i];
+        }
+        return array2;
+    }
+
 }
 
