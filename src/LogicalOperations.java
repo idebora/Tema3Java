@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+
 public class LogicalOperations {
 
 
@@ -354,16 +358,18 @@ public class LogicalOperations {
         return array;
     }
 
-    public int getSmallNumber(int[] array) {
+    public int getSecondSmallerNumber(int[] array) {
+        int x = 0;
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array.length; j++) {
-               if (array[i] < array[j]) {
-                    array[j] = array[i];
-                    array[i] = array[j+1];
+            for (int j = i + 1; j < array.length; j++) {
+               if (array[i] > array[j]) {
+                     x = array[j];
+                     array[j] = array[i];
+                     array[i] = x;
                 }
             }
         }
-            return array[1];
+        return array[1];
     }
 
     public int[] getCopyOfArray(int[] array1,int[] array2){
