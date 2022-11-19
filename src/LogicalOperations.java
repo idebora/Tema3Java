@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 public class LogicalOperations {
 
@@ -379,5 +380,49 @@ public class LogicalOperations {
         return array2;
     }
 
+    public void printListElements(List<Integer> mylist){
+        for(int i = 0; i< mylist.size(); i++){
+            System.out.println(mylist.get(i));
+        }
+    }
+    public void addNUmberToList(List<Integer> mylist, int number){
+        mylist.add(number);
+        System.out.println(mylist);
+    }
+    public void printListFromNumber(List<Integer> myList, int number){
+        int i = 0;
+        for(i = number; i< myList.size(); i++){
+            System.out.println(myList.get(i));
+        }
+    }
+    public void printListElementsFromBack(List<Integer> mylist){
+        for(int i = (mylist.size() - 1); i>0; i--){
+            System.out.println(mylist.get(i));
+        }
+    }
+
+    public void addStringToListAtIndex(List<String> myList, int position, String text){
+        myList.add(position,text);
+        System.out.println(myList);
+    }
+    public void addNumberToFirstPosition(List<Integer> myList, int number){
+        myList.add(0,number);
+        System.out.println(myList);
+    }
+    public void printIndexAndElement(List<Integer> myList){
+        for (int i = 0; i< myList.size(); i++){
+            System.out.println("Pe pozitia "+ i +" valoarea este: "+myList.get(i));
+        }
+    }
+    public int getGreaterNumberFromList(List<Integer> myList){
+        int g = myList.get(0);
+        for(int i = 1; i < myList.size(); i++) {
+            if (myList.get(i) > g) {
+                g = myList.get(i);
+            }
+        }
+            return g;
+
+    }
 }
 
