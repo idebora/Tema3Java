@@ -467,5 +467,8 @@ public class LogicalOperations {
     public String toString() {
         return super.toString();
     }
+    public void sayHey(){
+        System.out.println("hey world");
+    }
 }
 
