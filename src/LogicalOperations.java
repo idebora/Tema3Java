@@ -470,5 +470,9 @@ public class LogicalOperations {
     public void test_2() {
         System.out.println("Functie test 2");
     }
+
+    public void test_3() {
+        System.out.println("Functie test 3");
+    }
 }
 
