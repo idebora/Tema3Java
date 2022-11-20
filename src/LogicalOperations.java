@@ -462,5 +462,9 @@ public class LogicalOperations {
         }
         return myList;
     }
+
+    public void test_1() {
+        System.out.println("Functie test 1");
+    }
 }
 
