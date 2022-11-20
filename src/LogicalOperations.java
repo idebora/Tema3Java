@@ -466,5 +466,9 @@ public class LogicalOperations {
     public void test_1() {
         System.out.println("Functie test 1");
     }
+
+    public void test_2() {
+        System.out.println("Functie test 2");
+    }
 }
 
