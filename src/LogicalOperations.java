@@ -462,5 +462,10 @@ public class LogicalOperations {
         }
         return myList;
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
 
