@@ -462,5 +462,13 @@ public class LogicalOperations {
         }
         return myList;
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+    public void sayHey(){
+        System.out.println("hey world");
+    }
 }
 
