@@ -455,15 +455,8 @@ public class LogicalOperations {
             for (int j = i + 1; j < myList.size(); j++) {
                 if (myList.get(i) > myList.get(j)) {
                     int temp = myList.get(j);
-                    myList.remove(j);
-                    myList.add(j, myList.get(i));
-                    myList.add(i, temp);
-                }
-                else{
-                    int temp = myList.get(i);
-                    myList.remove(i);
-                    myList.add(i, myList.get(j));
-                    myList.add(j, temp);
+                    myList.set(j, myList.get(i));
+                    myList.set(i, temp);
                 }
             }
         }
