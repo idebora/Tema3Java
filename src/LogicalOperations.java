@@ -191,6 +191,7 @@ public class LogicalOperations {
             } while (j <= y);
         }
     }
+
     public void whileEven() {
         int i = 1;
         do {
@@ -198,45 +199,49 @@ public class LogicalOperations {
                 System.out.println(i);
             }
             i++;
-        } while (i<=100);
+        } while (i <= 100);
     }
-    public void whileodd(){
-        int i= 1;
-        do{
-            if(i%2 ==1){
+
+    public void whileodd() {
+        int i = 1;
+        do {
+            if (i % 2 == 1) {
                 System.out.println(i);
             }
             i++;
-        }while(i<=100);
+        } while (i <= 100);
     }
-    public void whileMed(){
+
+    public void whileMed() {
         int i = 111;
         int sum = 0;
         int count = 0;
-        do{
+        do {
             sum = sum + i;
             i++;
-            count+= 1;
-        }while(i<=8899);
+            count += 1;
+        } while (i <= 8899);
         System.out.println(sum);
         float med = sum / count;
         System.out.println(med);
     }
-    public void divid7(int x,int y){
+
+    public void divid7(int x, int y) {
         int i = x;
-        int sum =0;
+        int sum = 0;
         int count = 0;
         float med = 0;
-        do{
-            if(i%7 == 0){
-            sum = sum+i;
-            count +=1;
+        do {
+            if (i % 7 == 0) {
+                sum = sum + i;
+                count += 1;
             }
-        i++;
-        }while(i<=y);
-        med =(float) sum/count;
+            i++;
+        } while (i <= y);
+        med = (float) sum / count;
         System.out.println(med);
     }
+
     public void fibonacci() {
         int n = 0;
         int i = 0;
@@ -249,77 +254,73 @@ public class LogicalOperations {
             i = j;
             j = sum;
             n++;
-        } while (n<20);
+        } while (n < 20);
     }
 
     public void CozaLozaWoza() {
         int i = 1;
-        while(i<=110){
-            if(i%3==0 && i%5==0 && i%7==0){
+        while (i <= 110) {
+            if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
                 System.out.print("CozaLozaWoza ");
-            }
-            else if(i%3 == 0 && i%5 ==0){
+            } else if (i % 3 == 0 && i % 5 == 0) {
                 System.out.print("CozaLoza ");
-            }
-            else if(i%3 == 0 && i%7 ==0){
+            } else if (i % 3 == 0 && i % 7 == 0) {
                 System.out.print("CozaWoza ");
-            }
-            else if(i%5 == 0 && i%7 ==0){
+            } else if (i % 5 == 0 && i % 7 == 0) {
                 System.out.print("WozaLoza ");
-            }
-            else if(i%3==0){
+            } else if (i % 3 == 0) {
                 System.out.print("Coza ");
-            }
-            else if(i%5==0){
+            } else if (i % 5 == 0) {
                 System.out.print("Loza ");
-            }
-            else if(i%7==0){
+            } else if (i % 7 == 0) {
                 System.out.print("Woza ");
+            } else {
+                System.out.print(i + " ");
             }
-            else{
-                System.out.print(i+" ");
-            }
-            if(i%11 == 0){
+            if (i % 11 == 0) {
                 System.out.println();
             }
             i++;
 
         }
     }
-    public int[] myArray100(){
+
+    public int[] myArray100() {
         int[] myArray = new int[100];
-        for(int i = 0; i < myArray.length; i++){
+        for (int i = 0; i < myArray.length; i++) {
             myArray[i] = i + 1;
         }
         return myArray;
     }
-    public void printArray(int[] array){
-        for(int i = 0; i<array.length; i++){
+
+    public void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
         }
     }
-    public int[] evenArray(){
-        int index= 0;
+
+    public int[] evenArray() {
+        int index = 0;
         int[] myArray = new int[50];
-        for(int i = 1; i <= 100; i++){
-            if (i % 2 == 0){
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
                 myArray[index] = i;
-                index +=1;
+                index += 1;
             }
         }
         return myArray;
     }
 
-    public float averageOfValues(int[] myArray){
-       float sum = 0;
-        for(int i=0; i<myArray.length; i++){
+    public float averageOfValues(int[] myArray) {
+        float sum = 0;
+        for (int i = 0; i < myArray.length; i++) {
             sum += myArray[i];
         }
-        return sum/ myArray.length;
+        return sum / myArray.length;
     }
 
-    public boolean existString(String[] array, String S){
-        for(int i = 0; i<array.length; i++){
+    public boolean existString(String[] array, String S) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i].equals(S))
                 return true;
         }
@@ -327,9 +328,9 @@ public class LogicalOperations {
         return false;
     }
 
-    public int getIndexforValue(int[] array, int value){
-        for(int i = 0; i< array.length; i++){
-            if (value == array[i]){
+    public int getIndexforValue(int[] array, int value) {
+        for (int i = 0; i < array.length; i++) {
+            if (value == array[i]) {
                 return i;
             }
         }
@@ -347,12 +348,11 @@ public class LogicalOperations {
         return "-".toCharArray();
     }
 
-    public int[] getArrayLessNumber(int[] array, int number){
-        for(int i = 0; i<array.length; i++){
-            if (array[i] == number){
+    public int[] getArrayLessNumber(int[] array, int number) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == number) {
                 i = i;
-            }
-            else {
+            } else {
                 System.out.print(array[i] + " ");
             }
         }
@@ -363,66 +363,111 @@ public class LogicalOperations {
         int x = 0;
         for (int i = 0; i < array.length; i++) {
             for (int j = i + 1; j < array.length; j++) {
-               if (array[i] > array[j]) {
-                     x = array[j];
-                     array[j] = array[i];
-                     array[i] = x;
+                if (array[i] > array[j]) {
+                    x = array[j];
+                    array[j] = array[i];
+                    array[i] = x;
                 }
             }
         }
         return array[1];
     }
 
-    public int[] getCopyOfArray(int[] array1,int[] array2){
-        for (int i = 0; i < array2.length; i++){
+    public int[] getCopyOfArray(int[] array1, int[] array2) {
+        for (int i = 0; i < array2.length; i++) {
             array2[i] = array1[i];
         }
         return array2;
     }
 
-    public void printListElements(List<Integer> mylist){
-        for(int i = 0; i< mylist.size(); i++){
-            System.out.println(mylist.get(i));
-        }
-    }
-    public void addNUmberToList(List<Integer> mylist, int number){
-        mylist.add(number);
-        System.out.println(mylist);
-    }
-    public void printListFromNumber(List<Integer> myList, int number){
-        int i = 0;
-        for(i = number; i< myList.size(); i++){
-            System.out.println(myList.get(i));
-        }
-    }
-    public void printListElementsFromBack(List<Integer> mylist){
-        for(int i = (mylist.size() - 1); i>0; i--){
+    public void printListElements(List<Integer> mylist) {
+        for (int i = 0; i < mylist.size(); i++) {
             System.out.println(mylist.get(i));
         }
     }
 
-    public void addStringToListAtIndex(List<String> myList, int position, String text){
-        myList.add(position,text);
-        System.out.println(myList);
+    public void addNUmberToList(List<Integer> mylist, int number) {
+        mylist.add(number);
+        System.out.println(mylist);
     }
-    public void addNumberToFirstPosition(List<Integer> myList, int number){
-        myList.add(0,number);
-        System.out.println(myList);
-    }
-    public void printIndexAndElement(List<Integer> myList){
-        for (int i = 0; i< myList.size(); i++){
-            System.out.println("Pe pozitia "+ i +" valoarea este: "+myList.get(i));
+
+    public void printListFromNumber(List<Integer> myList, int number) {
+        int i = 0;
+        for (i = number; i < myList.size(); i++) {
+            System.out.println(myList.get(i));
         }
     }
-    public int getGreaterNumberFromList(List<Integer> myList){
+
+    public void printListElementsFromBack(List<Integer> mylist) {
+        for (int i = (mylist.size() - 1); i > 0; i--) {
+            System.out.println(mylist.get(i));
+        }
+    }
+
+    public void addStringToListAtIndex(List<String> myList, int position, String text) {
+        myList.add(position, text);
+        System.out.println(myList);
+    }
+
+    public void addNumberToFirstPosition(List<Integer> myList, int number) {
+        myList.add(0, number);
+        System.out.println(myList);
+    }
+
+    public void printIndexAndElement(List<Integer> myList) {
+        for (int i = 0; i < myList.size(); i++) {
+            System.out.println("Pe pozitia " + i + " valoarea este: " + myList.get(i));
+        }
+    }
+
+    public int getGreaterNumberFromList(List<Integer> myList) {
         int g = myList.get(0);
-        for(int i = 1; i < myList.size(); i++) {
+        for (int i = 1; i < myList.size(); i++) {
             if (myList.get(i) > g) {
                 g = myList.get(i);
             }
         }
-            return g;
+        return g;
 
+    }
+
+    public void changeIndexForTwoElements(List<Integer> myList) {
+        int x = myList.get(myList.size() - 1);
+        myList.add((myList.size() - 2), x);
+        myList.remove((myList.size() - 1));
+        System.out.println(myList);
+    }
+
+    public List<Integer> evenList(List<Integer> myList) {
+        List<Integer> evenList = new ArrayList<>();
+        int j = 0;
+        for (int i = 0; i < myList.size(); i++) {
+            if (myList.get(i) % 2 == 0) {
+                evenList.add(j, myList.get(i));
+                j += 1;
+            }
+        }
+        return evenList;
+    }
+
+    public List<Integer> sortList(List<Integer> myList) {
+        for (int i = 0; i < myList.size(); i++) {
+            for (int j = i + 1; j < myList.size(); j++) {
+                if (myList.get(i) > myList.get(j)) {
+                    int temp = myList.get(j);
+                    myList.remove(j);
+                    myList.add(j, myList.get(i));
+                    myList.add(i, temp);
+                }
+                else{
+                    int temp = myList.get(i);
+                    myList.remove(i);
+                    myList.add(i, myList.get(j));
+                    myList.add(j, temp);
+                }
+            }
+        }
+        return myList;
     }
 }
 

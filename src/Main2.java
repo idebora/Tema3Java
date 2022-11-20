@@ -48,24 +48,26 @@ public class Main2 {
         firstList.add(2,4);
         firstList.add(3,6);
         firstList.add(4,8);
-        firstList.add(5,10);
-        firstList.add(6,12);
+        firstList.add(5,123);
+        firstList.add(6,1);
         op.printListElements(firstList);
-        op.addNUmberToList(firstList, 14);
-        op.printListFromNumber(firstList,3);
-        System.out.println("Elementele listei de la ultimul la primul:");
-        op.printListElementsFromBack(firstList);
-        List<String> stringList = new ArrayList<>();
-        stringList.add(0, "ala");
-        stringList.add(1,"bala");
-        stringList.add(2,"cala");
-        stringList.add(3,"dala");
-        op.addStringToListAtIndex(stringList,2,"ciulandra");
-        op.addNumberToFirstPosition(firstList, 999);
-        op.printIndexAndElement(firstList);
-        System.out.println("Cel mai mare numar din lista este: "+op.getGreaterNumberFromList(firstList));
-
-
+//        op.addNUmberToList(firstList, 14);
+//        op.printListFromNumber(firstList,3);
+//        System.out.println("Elementele listei de la ultimul la primul:");
+//        op.printListElementsFromBack(firstList);
+//        List<String> stringList = new ArrayList<>();
+//        stringList.add(0, "ala");
+//        stringList.add(1,"bala");
+//        stringList.add(2,"cala");
+//        stringList.add(3,"dala");
+//        op.addStringToListAtIndex(stringList,2,"ciulandra");
+//        op.addNumberToFirstPosition(firstList, 999);
+//        op.printIndexAndElement(firstList);
+//        System.out.println("Cel mai mare numar din lista este: "+op.getGreaterNumberFromList(firstList));
+        System.out.println("Tema optionala:");
+        op.changeIndexForTwoElements(firstList);
+        System.out.println(op.evenList(firstList));
+        System.out.println(op.sortList(firstList));
 
 
 
