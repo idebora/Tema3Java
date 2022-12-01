@@ -1,17 +1,16 @@
 package AnimalRescuer;
 
-public class Veterinarian {
-    private String name;
+public class Veterinarian extends Human {
+
     private String specialty;
-    public void setName(String name) {
-        this.name = name;
-    }
-    public String getName() {
-        return name;
-    }
+
     public void setSpecialty(String specialty) {
         this.specialty = specialty;
     }
+
+    public Veterinarian() {
+    }
+
     public String getSpecialty() {
         return specialty;
     }

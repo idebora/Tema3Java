@@ -1,6 +1,4 @@
-import AnimalRescuer.AppMain;
 
-import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) {
@@ -64,7 +62,9 @@ public class Main {
 //        op.fibonacci();
 //        System.out.println("CozaLozaWoza method:");
 //        op.CozaLozaWoza();
-        AppMain.main();
+//        AppMain.main();
+        Read read = new Read();
+        read.getInt();
     }
 }
 

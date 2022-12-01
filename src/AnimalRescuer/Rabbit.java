@@ -1,6 +1,6 @@
 package AnimalRescuer;
 
-public class Rabbit extends Animal{
+public abstract class Rabbit extends Animal{
 
     public void happyBehavior(){
         System.out.println("Rabbit jumps a lot");

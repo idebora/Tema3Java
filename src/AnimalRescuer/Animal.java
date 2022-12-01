@@ -1,6 +1,6 @@
 package AnimalRescuer;
 
-public class Animal {
+public abstract class Animal {
     private String name;
     private int health;
     private int hunger;
@@ -8,60 +8,38 @@ public class Animal {
     private String food;
     private String activity;
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String Name) {
+        this.name = Name;
     }
+    public abstract String getName();
 
-    public String getName() {
-        return name;
-    }
+    public abstract void setHealth(int health);
+    public abstract int getHealth();
 
-    public void setHealth(int health){
+    public abstract int getHealth(int scorehealth);
 
-        this.health = health;
-    }
-    public int getHealth() {
-        return health;
-    }
-    public void setHunger(int hunger){
+    public abstract void setHunger(int hunger);
+    public abstract int getHunger();
 
-        this.hunger = hunger;
-    }
-    public int getHunger() {
-        return hunger;
-    }
-    public void setSpirit(int spirit){
+    public abstract int getHunger(int hungerscore);
 
-        this.spirit = spirit;
-    }
-    public int getSpirit() {
-        return spirit;
-    }
-    public void setFood(String food) {
+    public abstract void setSpirit(int spirit);
+    public abstract int getSpirit();
 
-        this.food = food;
-    }
-    public String getFood() {
+    public abstract int getSpirit(int spiritscore);
 
-        return food;
-    }
-    public void setActivity(String activity){
+    public abstract void setFood(String food);
+    public abstract String getFood();
 
-        this.activity = activity;
-    }
-    public String getActivity() {
+    public abstract String getFood(String food);
 
-        return activity;
-    }
+    public abstract void setActivity(String activity);
+    public abstract String getActivity();
 
-    public void hungerBehavior(){
-        System.out.println("Animal makes some sounds");
-    }
-    public void happyBehavior(){
-        System.out.println("Animal makes many moves around you");
-    }
-    public void sickBehavior(){
-        System.out.println("Animal doesn't eat or move");
-    }
+    public abstract String getActivity(String activity);
+
+    public abstract void hungerBehavior();
+    public abstract void happyBehavior();
+    public abstract void sickBehavior();
 
 }

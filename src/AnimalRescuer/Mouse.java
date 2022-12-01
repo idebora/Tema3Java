@@ -1,6 +1,6 @@
 package AnimalRescuer;
 
-public class Mouse extends Animal{
+public abstract class Mouse extends Animal{
 
     public void happyBehavior(){
         System.out.println("Mouse makes many moves around");

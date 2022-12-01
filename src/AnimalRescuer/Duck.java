@@ -1,6 +1,6 @@
 package AnimalRescuer;
 
-public class Duck extends Animal{
+public abstract class Duck extends Animal{
     public void happyBehavior() {
         System.out.println("Duck opens its wings");
     }

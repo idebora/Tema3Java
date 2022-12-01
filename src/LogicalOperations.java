@@ -462,5 +462,21 @@ public class LogicalOperations {
         }
         return myList;
     }
+
+    public void tryArray (int[] array, int number) {
+        try {
+            System.out.println(array[number]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Inside catch, number too large");
+        }
+    }
+    public void wait(int x){
+        try {
+            Thread.sleep(x*1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
 }
 
