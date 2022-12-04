@@ -40,7 +40,7 @@ public class Main {
 //        System.out.println(logicOp.isEligibleToVote(19));
 //        System.out.println(logicOp.theMaxNumber(12,9,3));
 //        System.out.println(logicOp.theMaxNumber2(12,19,3));
-    LogicalOperations op = new LogicalOperations();
+//    LogicalOperations op = new LogicalOperations();
 //    op.afis100(88);
 //    op.afisNegativ(-98);
 //    op.afisXY(8,10);
@@ -63,8 +63,9 @@ public class Main {
 //        System.out.println("CozaLozaWoza method:");
 //        op.CozaLozaWoza();
 //        AppMain.main();
-        Read read = new Read();
-        read.getInt();
+//        Read read = new Read();
+//        read.getInt();
+//    }
     }
 }
 
